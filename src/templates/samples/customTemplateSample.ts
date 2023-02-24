@@ -3,7 +3,7 @@ import { v2 } from "@govtechsg/open-attestation";
 export interface CooTemplateCertificate extends v2.OpenAttestationDocument {
   name: string;
   institute: string;
-  recipient: {
+  sender: {
     name: string;
   };
 }
@@ -21,8 +21,8 @@ export const cooTemplateCertificate: CooTemplateCertificate = {
       },
     },
   ],
-  recipient: {
-    name: "MRA Officer",
+  sender: {
+    name: "ICT Authority",
   },
   $template: {
     name: "COO",
