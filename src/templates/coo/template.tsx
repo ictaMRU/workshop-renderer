@@ -20,7 +20,7 @@ export const CooTemplate: FunctionComponent<TemplateProps<CooTemplateCertificate
     <div css={containerStyle} className={className} id="custom-template">
       <h1>{document.name}</h1>
       <div>issued by</div>
-      <h2>{document.institute}</h2>
+      <h2>{document.sender.name}</h2>
     </div>
   );
 };
