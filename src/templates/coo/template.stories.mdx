@@ -1,0 +1,22 @@
+import { Meta, Preview, Props, Description, Story } from "@storybook/addon-docs/blocks";
+import { object } from "@storybook/addon-knobs";
+import { CooTemplate } from "./template";
+import { cooTemplateCertificate } from "../samples/customTemplateSample";
+
+<Meta title="MDX|CooTemplate" component={CooTemplate} />
+
+# CooTemplate component
+
+<Description of={CooTemplate} />
+
+# Props
+
+<Props of={CooTemplate} />
+
+# Usage
+
+<Preview>
+  <Story name="basic sample">
+    <CooTemplate document={object("document", cooTemplateCertificate)} />
+  </Story>
+</Preview>
